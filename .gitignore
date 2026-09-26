@@ -1,14 +1,29 @@
-# Build output
+# Build output and binaries
 build/
 *.exe
 *.out
 *.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
 
-# IDE and OS files
+# Debug and sanitizer artifacts
+*.dSYM/
+*.pdb
+*.ilk
+
+# IDE and editor files
 .vscode/
 .idea/
 *.suo
 *.user
 *.swp
+*~
+
+# OS files
 Thumbs.db
 .DS_Store
+Desktop.ini
