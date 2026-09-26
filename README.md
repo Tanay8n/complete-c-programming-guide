@@ -24,31 +24,6 @@ An open, practical C language guide for first-year B.Tech students. It is arrang
 4. Complete the matching lab programs without looking at the solution first.
 5. Use the exam-preparation notes only after you can solve the exercises.
 
-## Quick start
-
-### Linux/macOS (GCC or Clang)
-
-\`\`\`bash
-cd complete-c-programming-guide
-make examples
-./build/01-fundamentals/examples/hello_world
-\`\`\`
-
-### Windows (MinGW GCC)
-
-Run the PowerShell helper from the repository root:
-
-\`\`\`powershell
-.\\scripts\\compile_all.ps1
-.\\build\\01-fundamentals\\examples\\hello_world.exe
-\`\`\`
-
-To compile one file directly:
-
-\`\`\`powershell
-gcc -std=c11 -Wall -Wextra -pedantic 01-fundamentals/examples/hello_world.c -o hello_world.exe
-\`\`\`
-
 ## Repository conventions
 
 - Examples are intentionally small and each has its own \`main\` function.
