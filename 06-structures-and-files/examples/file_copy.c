@@ -32,6 +32,7 @@ int main(int argc, char *argv[]) {
         fputs("Read error.\n", stderr);
         status = 1;
     }
-    if (fclose(source) != 0 || fclose(destination) != 0) status = 1;
+    if (fclose(source) != 0) status = 1;
+    if (fclose(destination) != 0) status = 1;
     return status;
 }

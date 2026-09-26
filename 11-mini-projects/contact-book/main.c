@@ -12,11 +12,12 @@ static int add_contact(struct Contact **contacts, size_t *count, size_t *capacit
         *contacts = resized;
         *capacity = next_capacity;
     }
-    struct Contact *contact = &(*contacts)[(*count)++];
+    struct Contact *contact = &(*contacts)[*count];
     printf("Name: ");
     if (scanf(" %63[^\n]", contact->name) != 1) return 0;
     printf("Phone: ");
     if (scanf(" %31s", contact->phone) != 1) return 0;
+    ++*count;
     return 1;
 }
 
